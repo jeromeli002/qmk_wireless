@@ -15,14 +15,14 @@
  */
 #pragma once
  
-# define REPORT_BUFFER_QUEUE_SIZE 256
+# define REPORT_BUFFER_QUEUE_SIZE 90
 
 #ifdef BLUETOOTH_BHQ
 // Its active level is "BHQ_IRQ_AND_INT_LEVEL of bhq.h " 
-#   define BHQ_RUN_STATE_INPUT_PIN  A1             // Module operating status
-#   define QMK_RUN_OUTPUT_PIN       A0             // QMK operating status
+#   define BHQ_RUN_STATE_INPUT_PIN  B12             // Module operating status
+#   define QMK_RUN_OUTPUT_PIN       B13             // QMK operating status
 
-#   define UART_DRIVER          SD2
+#   define UART_DRIVER          SD1
 #   define UART_TX_PIN          A9
 #   define UART_TX_PAL_MODE     7
 #   define UART_RX_PIN          A10

@@ -1,0 +1,100 @@
+{
+    "keyboard_name": "JLK22e1",
+    "manufacturer": "JLKB",
+    "url": "",
+    "maintainer": "JL",
+    "usb": {
+        "vid": "0xFEED",
+        "pid": "0x5009",
+        "device_version": "0.0.1"
+    },
+     
+    "encoder": {
+    "rotary": [
+      { "pin_a": "A10", "pin_b": "A15", "resolution": 4 }
+    ]
+  }
+  
+    "rgblight": {
+        "saturation_steps": 8,  // 饱和度步数
+        "brightness_steps": 8,  // 亮度步数
+        "led_count": 22,        //灯数量
+        "hue_steps":8,          // 色调步数 
+        "max_brightness":128,   // 最大亮度 
+        "sleep": true,          // 睡眠时关闭灯 
+        "animations": {
+            "breathing": true,
+            "rainbow_mood": true,
+            "rainbow_swirl": true,
+            "snake": true,
+            "knight": true,
+            "christmas": true,
+            "static_gradient": true,
+            "rgb_test": true,
+            "alternating": true,
+            "twinkle": true
+        }
+    },
+    "ws2812": {
+        "pin": "B10"
+    },
+    
+    "indicators": {
+      "caps_lock": "B9",      //大写指示灯
+      "scroll_lock": "B8",    //SCR锁定指示灯
+      "num_lock": "B5"       //num指示灯
+      "on_state": 0         //1开启 = 高 0开启 = 低
+    },
+    
+    "matrix_pins": {
+      "cols": ["C13", "C14", "C15", "B4" ],
+        "rows": ["A3", "A4", "A5", "A6", "A7", "B0", null ]
+      "io_delay": 5    //延迟
+    },
+    
+    "diode_direction": "COL2ROW",
+    //"processor": "STM32F103",    //mcu型号
+    //"bootloader": "stm32duino",   //bootloader
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+            //{"label": "Esc", "matrix": [row, col], "x": 0, "y": 0}
+                {"x": 0, "y": 0, "matrix": [0, 0]},
+                {"x": 1, "y": 0, "matrix": [0, 1]},
+                {"x": 2, "y": 0, "matrix": [0, 2]},
+                {"x": 3, "y": 0, "matrix": [0, 3]},
+
+                {"x": 0, "y": 1, "matrix": [1, 0]},
+                {"x": 1, "y": 1, "matrix": [1, 1]},
+                {"x": 2, "y": 1, "matrix": [1, 2]},
+                {"x": 3, "y": 1, "matrix": [1, 3]},
+
+                {"x": 0, "y": 2, "matrix": [2, 0]},
+                {"x": 1, "y": 2, "matrix": [2, 1]},
+                {"x": 2, "y": 2, "matrix": [2, 2]},
+                {"x": 3, "y": 2, "matrix": [2, 3]},
+
+                {"x": 0, "y": 3, "matrix": [3, 0]},
+                {"x": 1, "y": 3, "matrix": [3, 1]},
+                {"x": 2, "y": 3, "matrix": [3, 2]},
+                {"x": 3, "y": 3, "matrix": [3, 3]},
+                
+                {"x": 0, "y": 4, "matrix": [4, 0]},
+                {"x": 1, "y": 4, "matrix": [4, 1]},
+                {"x": 2, "y": 4, "matrix": [4, 2]},
+                {"x": 3, "y": 4, "matrix": [4, 3]},  
+                
+                {"x": 0, "y": 5, "matrix": [5, 0]},
+                {"x": 1, "y": 5, "matrix": [5, 1]},
+                {"x": 2, "y": 5, "matrix": [5, 2]},
+                {"x": 3, "y": 5, "matrix": [5, 3]},  
+                
+                {"x": 0, "y": 6, "matrix": [6, 0]},
+                {"x": 1, "y": 6, "matrix": [6, 1]},
+                {"x": 2, "y": 6, "matrix": [6, 2]},
+                {"x": 3, "y": 6, "matrix": [6, 3]}        
+                
+            ]
+        }
+    }
+}

@@ -1,9 +1,9 @@
 # MCU name
-MCU = STM32F401
-#MCU_LDSCRIPT = STM32F103xB
+MCU = STM32F103
+MCU_LDSCRIPT = STM32F103xB
 # Bootloader selection
 #BOOTLOADER = uf2boot   #生成uf2固件
-BOOTLOADER = stm32-dfu      #生成vfw固件
+BOOTLOADER = stm32duino      #生成vfw固件
 # BOARD = STM32_F103_STM32DUINO
 # BOOTLOADER = tinyuf2
 
@@ -36,8 +36,8 @@ RGBLIGHT_ENABLE ?= yes
 # WPM_ENABLE = yes		 # Show APM.
 DYNAMIC_MACRO_ENABLE = yes  # 启用动态宏
 
-POINTING_DEVICE_ENABLE = yes               #摇杆模拟指点杆
-POINTING_DEVICE_DRIVER = analog_joystick   #摇杆模拟指点杆
+# POINTING_DEVICE_ENABLE = yes               #摇杆模拟指点杆
+# POINTING_DEVICE_DRIVER = analog_joystick   #摇杆模拟指点杆
 # JOYSTICK_TRIGGER_ENABLE = yes   #摇杆映射按键
 # JOYSTICK_ENABLE = yes       # 游戏摇杆
 # JOYSTICK_DRIVER = analog
@@ -50,3 +50,5 @@ PROGRAMMABLE_BUTTON_ENABLE = yes
 # OLED_ENABLE = yes
 # OLED_DRIVER = ssd1306   
 EXTRAFLAGS+=-flto  # 如果固件太大在rule.mk 中添加EXTRAFLAGS+=-flto 
+
+VPATH += $(TOP_DIR)/keyboards/keymagichorse

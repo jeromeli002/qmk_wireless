@@ -54,7 +54,7 @@
 #define RGBLIGHT_MAX_LAYERS 16
 
 /* 层数 */
-#  define DYNAMIC_KEYMAP_LAYER_COUNT 16
+#  define DYNAMIC_KEYMAP_LAYER_COUNT 2
 
 
 /* key matrix size */

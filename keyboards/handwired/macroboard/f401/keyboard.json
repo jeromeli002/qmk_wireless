@@ -5,8 +5,8 @@
         }
     },
     "matrix_pins": {
-        "cols": ["A5", "A6", "A7", "B0", "B1", "B10"],
-        "rows": ["A4", "A3", "A2", "A1", "A0"]
+        "cols": ["B5", "B4", "B3", "C12", "B1", "B10"],
+        "rows": ["A1", "A0", "C3", "C2", "C1"]
     },
     "diode_direction": "COL2ROW",
     "ws2812": {

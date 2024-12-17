@@ -1,4 +1,4 @@
-/* Copyright 2024 keymagichorse
+/* Copyright 2020 QMK
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -13,11 +13,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 #pragma once
 
-#include_next <board.h>
+#define HAL_USE_PWM    TRUE
+#define HAL_USE_PAL    TRUE
 
-#undef STM32_HSECLK
-#define STM32_HSECLK 25000000
-// #define STM32_HSECLK 25000000
+#define PAL_USE_WAIT        TRUE  
+#define PAL_USE_CALLBACKS   TRUE
 
+#include_next <halconf.h>

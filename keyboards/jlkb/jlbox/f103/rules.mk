@@ -3,7 +3,7 @@ MCU = STM32F103
 MCU_LDSCRIPT = STM32F103xB
 # Bootloader selection
 #BOOTLOADER = uf2boot   #生成uf2固件
-BOOTLOADER = vibl      #生成vfw固件
+BOOTLOADER = stm32duino      #生成vfw固件
 # BOARD = STM32_F103_STM32DUINO
 # BOOTLOADER = tinyuf2
 

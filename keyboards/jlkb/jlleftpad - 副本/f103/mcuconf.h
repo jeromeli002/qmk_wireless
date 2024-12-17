@@ -1,4 +1,4 @@
-/* Copyright 2024 keymagichorse
+/* Copyright 2020 QMK
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -13,11 +13,28 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 #pragma once
 
-#include_next <board.h>
+#include_next <mcuconf.h>
 
-#undef STM32_HSECLK
-#define STM32_HSECLK 25000000
-// #define STM32_HSECLK 25000000
+#undef STM32_PWM_USE_TIM2
+#define STM32_PWM_USE_TIM2 TRUE
 
+#undef STM32_ADC_USE_ADC1
+#define STM32_ADC_USE_ADC1 TRUE
+
+#define HAL_USE_SERIAL  TRUE        // enabled SERIAL
+
+#    undef STM32_SERIAL_USE_USART1
+#    define STM32_SERIAL_USE_USART1 TRUE
+
+#undef STM32_PLLM_VALUE
+#undef STM32_PLLN_VALUE
+#undef STM32_PLLP_VALUE
+#undef STM32_PLLQ_VALUE
+
+#define STM32_PLLM_VALUE                    (STM32_HSECLK/1000000)
+#define STM32_PLLN_VALUE                    192
+#define STM32_PLLP_VALUE                    4
+#define STM32_PLLQ_VALUE                    4

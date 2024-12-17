@@ -2,7 +2,7 @@
     "keyboard_name": "HL6095",
     "manufacturer": "keymagichorse",
     "processor": "STM32F401",
-    "bootloader": "stm32-dfu",
+    "bootloader": "tinyuf2",
     "usb": {
         "vid": "0xBB00",
         "pid": "0xBB00",
@@ -22,8 +22,8 @@
         "driver":"bhq"
     },
     "matrix_pins": {
-        "cols": ["A2", "A15", "B9", "C13", "C14", "C15", "A6", "A7", "B0", "B10", "B6", "B5", "B4", "B3"],
-        "rows": ["A8", "B15", "B14", "A5", "A4"]
+        "cols": ["B5", "B4", "B3", "C12", null, null, null, null, null, null, null, null, null, null],
+        "rows": ["A1", "A0", "C3", "C2", "C1"]
     },
     "rgblight": {
         "led_count": 1,

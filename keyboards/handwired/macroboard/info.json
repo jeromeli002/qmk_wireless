@@ -3,6 +3,7 @@
     "manufacturer": "QMK",
     "url": "",
     "maintainer": "Micha\u0142 Szczepaniak",
+    "bootloader": "tinyuf2",
     "usb": {
         "vid": "0xFEED",
         "pid": "0x2137",

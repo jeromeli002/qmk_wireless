@@ -38,3 +38,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #   define UART_RX_PAL_MODE	    7
 
 #endif
+
+
+#define WS2812_BYTE_ORDER       WS2812_BYTE_ORDER_GRB
+
+#define RGBLIGHT_LAYERS
+#define RGBLIGHT_LAYER_BLINK
+#define RGBLIGHT_LAYERS_OVERRIDE_RGB_OFF
+#define RGBLIGHT_LAYERS_RETAIN_VAL

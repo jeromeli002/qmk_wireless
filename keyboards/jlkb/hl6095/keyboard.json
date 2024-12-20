@@ -3,6 +3,7 @@
     "manufacturer": "keymagichorse",
     "processor": "STM32F401",
     "bootloader": "stm32-dfu",
+    "development_board": "blackpill_f401",
     "usb": {
         "vid": "0xBB00",
         "pid": "0xBB00",

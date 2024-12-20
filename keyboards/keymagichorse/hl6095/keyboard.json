@@ -48,7 +48,7 @@
         }
     },
     "ws2812": {
-        "pin": "B7"
+        "pin": "A3"
         // "driver": "pwm"
     },
     "diode_direction": "ROW2COL",

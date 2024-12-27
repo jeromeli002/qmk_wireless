@@ -1,8 +1,8 @@
-/* Copyright 2024 keymagichorse
+/* Copyright 2024 Cipulot
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 2 of the License, or
+ * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -16,17 +16,7 @@
 
 #pragma once
 
+#include_next <mcuconf.h>
 
-#ifdef KM_DEBUG
-#    include "SEGGER_RTT.h"
-#    define km_printf(format, ...) SEGGER_RTT_printf(0, format, ##__VA_ARGS__)
-#else
-#    define km_printf(format, ...)
-#endif
-
-#ifdef KM_DEBUG
-#    define km_printf_init() SEGGER_RTT_Init()
-#else
-#    define km_printf_init()
-#endif
-
+#undef STM32_ADC_USE_ADC1
+#define STM32_ADC_USE_ADC1 TRUE

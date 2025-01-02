@@ -7,11 +7,6 @@ ifeq ($(strip $(KM_DEBUG)), yes)
 	VPATH += keyboards/keymagichorse/km_common/rtt
 endif   
 
-ifeq ($(strip $(KB_CHECK_BATTERY_ENABLED)), yes)
- 	OPT_DEFS += -DKB_CHECK_BATTERY_ENABLED
-	SRC+= km_common/battery.c
-endif   
-
 ifeq ($(strip $(KB_LPM_ENABLED)), yes)
     OPT_DEFS += -DKB_LPM_ENABLED
 	SRC+= km_common/lpm_stm32f4.c

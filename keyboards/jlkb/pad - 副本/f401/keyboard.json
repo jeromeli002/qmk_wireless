@@ -9,18 +9,18 @@
         "rows": ["A1", "A0", "C3", "C2", "C1"]
     },
     "diode_direction": "COL2ROW",
+    "ws2812": {
+        "driver": "pwm"
+    },
     "development_board": "blackpill_f401",
     "features": {
         "bootmagic": true,
         "mousekey": true,
-        "bluetooth": true,
         "extrakey": true,
         "nkro": true,
         "rgblight": true
     },
-    "bluetooth":{
-        "driver":"bhq"
-    },
+
     "qmk": {
         "locking": {
             "enabled": true,

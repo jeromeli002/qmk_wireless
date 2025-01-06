@@ -1,4 +1,4 @@
-/* Copyright 2020 QMK
+/* Copyright 2024 keymagichorse
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,10 +16,22 @@
 
 #pragma once
 
-#define HAL_USE_PWM    TRUE
-#define HAL_USE_PAL    TRUE
+#include_next <mcuconf.h>
 
-#define PAL_USE_WAIT        TRUE  
-#define PAL_USE_CALLBACKS   TRUE
+#define HAL_USE_SERIAL  TRUE        // enabled SERIAL
 
-#include_next <halconf.h>
+#    undef STM32_SERIAL_USE_USART2
+#    define STM32_SERIAL_USE_USART2 TRUE
+
+#undef STM32_ADC_USE_ADC1
+#define STM32_ADC_USE_ADC1          TRUE
+
+#undef STM32_PLLM_VALUE
+#undef STM32_PLLN_VALUE
+#undef STM32_PLLP_VALUE
+#undef STM32_PLLQ_VALUE
+
+#define STM32_PLLM_VALUE                    (STM32_HSECLK/1000000)
+#define STM32_PLLN_VALUE                    192
+#define STM32_PLLP_VALUE                    4
+#define STM32_PLLQ_VALUE                    4

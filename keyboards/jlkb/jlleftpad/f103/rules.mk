@@ -1,11 +1,9 @@
 # MCU name
-MCU = STM32F401
-BOARD = BLACKPILL_STM32_F401
-
-# MCU_LDSCRIPT = STM32F103xB
+MCU = STM32F103
+MCU_LDSCRIPT = STM32F103xB
 # Bootloader selection
 #BOOTLOADER = uf2boot   #生成uf2固件
-BOOTLOADER = tinyuf2      #生成vfw固件
+BOOTLOADER = stm32duino      #生成vfw固件
 # BOARD = STM32_F103_STM32DUINO
 # BOOTLOADER = tinyuf2
 
@@ -53,4 +51,4 @@ PROGRAMMABLE_BUTTON_ENABLE = yes
 # OLED_DRIVER = ssd1306   
 EXTRAFLAGS+=-flto  # 如果固件太大在rule.mk 中添加EXTRAFLAGS+=-flto 
 
-# VPATH += $(TOP_DIR)/keyboards/keymagichorse
+VPATH += $(TOP_DIR)/keyboards/keymagichorse

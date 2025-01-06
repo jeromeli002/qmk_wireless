@@ -1,5 +1,21 @@
 #pragma once
 
+#pragma once
+ 
+# define REPORT_BUFFER_QUEUE_SIZE 64
+
+#ifdef BLUETOOTH_BHQ
+// Its active level is "BHQ_IRQ_AND_INT_LEVEL of bhq.h " 
+#   define BHQ_RUN_STATE_INPUT_PIN  B13             // Module operating status
+#   define QMK_RUN_OUTPUT_PIN       B12             // QMK operating status
+
+#   define UART_DRIVER          SD1
+#   define UART_TX_PIN          A9
+#   define UART_TX_PAL_MODE     7
+#   define UART_RX_PIN          A10
+#   define UART_RX_PAL_MODE	    7
+
+#endif
 
  /* 层指示灯 */
 #define RGBLIGHT_LAYERS
@@ -8,7 +24,7 @@
 #define RGBLIGHT_MAX_LAYERS 16
 
 /* 层数 */
-#  define DYNAMIC_KEYMAP_LAYER_COUNT 2
+#  define DYNAMIC_KEYMAP_LAYER_COUNT 8
 
 /* 编码器01 */
 #define ENCODER_DEFAULT_POS 0x3

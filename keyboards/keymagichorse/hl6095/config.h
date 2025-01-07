@@ -17,8 +17,10 @@
  
 #ifdef BLUETOOTH_BHQ
 // Its active level is "BHQ_IRQ_AND_INT_LEVEL of bhq.h " 
-#   define BHQ_RUN_STATE_INPUT_PIN  A1             // Module operating status
-#   define QMK_RUN_OUTPUT_PIN       A0             // QMK operating status
+#   define BHQ_RUN_STATE_INPUT_PIN  B13             // 无线模块运行状态IQR/+
+#   define QMK_RUN_OUTPUT_PIN       B12             // QMK运行状态INT/-
+#   define USB_POWER_SENSE_PIN      A13                  // USB插入检测/低功耗
+#   define USB_POWER_CONNECTED_LEVEL 1           //1高，0低。配置USB插入时是高电平还是低电平的
 
 #   define UART_DRIVER          SD1
 #   define UART_TX_PIN          A9

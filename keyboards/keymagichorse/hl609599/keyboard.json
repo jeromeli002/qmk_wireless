@@ -51,7 +51,7 @@
         "pin": "B7"
         // "driver": "pwm"
     },
-    "diode_direction": "ROW2COL",
+    "diode_direction": "COL2ROW",
     "layouts": {
         "LAYOUT_60_tsangan_split_rshift": {
             "layout": [

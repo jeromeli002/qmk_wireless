@@ -22,8 +22,8 @@
         "driver":"bhq"
     },
     "matrix_pins": {
-        "cols": ["B5", "B4", "B3", "C12", null, null, null, null, null, null, null, null, null, null],
-        "rows": ["A1", "A0", "C3", "C2", "C1"]
+        "cols": ["B0", "A6", "C15", "C14", "A0", null, null, null, null, null, null, null, null, null],
+        "rows": ["B1", "A7", "A5", "A4", "A3"]
     },
     "rgblight": {
         "led_count": 1,
@@ -48,7 +48,7 @@
         }
     },
     "ws2812": {
-        "pin": "A3"
+        "pin": "C1"
         // "driver": "pwm"
     },
     "diode_direction": "COL2ROW",

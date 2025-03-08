@@ -1,0 +1,48 @@
+{
+
+ "name": "JL-JOYSTICK",
+
+ "vendorId": "0xFEED",
+
+ "productId": "0x6004",
+ 
+  "vial": {
+    "vibl": true
+  },
+ 
+"customKeycodes": [ 
+    {"name": "下\n一层",
+	 "title": "增加一层0→1",
+	 "shortName": "向下\n一层"
+	},
+	{"name": "上\n一层",
+	 "title": "减少一层1→0",
+	 "shortName": "向上\n一层"
+	},
+	{"name": "一键购物",
+	 "title": "淘宝购物",
+	 "shortName": "一键\n购物"
+	},
+	{"name": "按6\n放7",
+	 "title": "按下6层抬起7层",
+	 "shortName": "按6\n放7"
+	}
+ ],
+
+ "lighting": "qmk_rgblight",
+
+ "matrix": { "rows": 3, "cols":3},
+    
+ "layouts": {
+      "labels": [ 
+      ],
+   "keymap":[
+["0,0",{"x":1},"0,1"],
+[{"y":1,"x":1},"1,1"],
+["2,1","1,0","2,0"],
+[{"x":1},"1,2"]
+    ]
+
+ }
+
+}

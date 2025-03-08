@@ -1,0 +1,46 @@
+{
+ "name": "JL-tourbox Rev.A",
+ "vendorId": "0xFEED",
+ "productId": "0x6004",
+ "vial": {
+    "vibl": true
+  },
+"customKeycodes": [ 
+    {"name": "下\n一层",
+	 "title": "增加一层0→1",
+	 "shortName": "向下\n一层"
+	},
+	{"name": "上\n一层",
+	 "title": "减少一层1→0",
+	 "shortName": "向上\n一层"
+	},
+	{"name": "一键购物",
+	 "title": "淘宝购物",
+	 "shortName": "一键\n购物"
+	},
+	{"name": "按6\n放7",
+	 "title": "按下6层抬起7层",
+	 "shortName": "按6\n放7"
+	}
+ ],
+
+ "lighting": "qmk_rgblight",
+
+ "matrix": { "rows": 5, "cols":4 },
+
+ "vial": {
+    },
+    
+ "layouts": {
+      "labels": [ 
+      "侧边滚轮"
+      ],
+   "keymap":[
+["0,0",{"x":0.25, "c": "#cccccc"},"0,1",{"x":0.25},"0,2",{"x":0.25},"0,3"],
+[{"y":-0.25,"x":5.25},"1,0\n\n\n\n\n\n\n\n\ne","2,3","1,1\n\n\n\n\n\n\n\n\ne"],
+[{"y":-0.25,"d":true},"\n\n\n0,0","3,0\n\n\n0,1\n\n\n\n\n\ne",{"x":0.5},"3,1\n\n\n0,1\n\n\n\n\n\ne"],
+[{"y":0.75},"2,0",{"x":0.5},"2,0\n\n\n\n\n\n\n\n\ne",{"x":1.5},"2,1\n\n\n\n\n\n\n\n\ne",{"x":0.5},"1,0",{"x":0.25},"1,1"],
+[{"y":0.25},"2,1",{"x":0.75},"0,0\n\n\n\n\n\n\n\n\ne","2,2","0,1\n\n\n\n\n\n\n\n\ne",{"x":0.75},"1,2",{"x":0.25},"1,3"]
+    ]
+ }
+}

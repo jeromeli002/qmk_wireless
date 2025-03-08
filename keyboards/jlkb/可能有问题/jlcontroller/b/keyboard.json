@@ -1,0 +1,42 @@
+{
+    "keyboard_name": "JL-控制器B",
+    "manufacturer": "JL",
+    "url": "http://wpa.qq.com/msgrd?v=3&uin=532192607&site=qq&menu=yes",
+    "maintainer": "qmk",
+    "usb": {
+        "vid": "0xF1ED",
+        "pid": "0x0B91",
+        "device_version": "0.0.1"
+    },
+    "encoder": {
+    "rotary": [
+      { "pin_a": "B14", "pin_b": "B13", "resolution": 4 },
+      { "pin_a": "A8", "pin_b": "B15", "resolution": 4 },
+      { "pin_a": "B4", "pin_b": "B3", "resolution": 4 }
+    ]
+  }
+  
+    "matrix_pins": {
+        "cols": ["A4", "A5", "A6"],
+        "rows": ["B0", "B1", "B10"]
+    },
+    "diode_direction": "COL2ROW",
+
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+            { "matrix": [0, 0],"x": 0,"y": 0}, 
+            { "matrix": [0, 1],"x": 1,"y": 0},
+            { "matrix": [0, 2],"x": 2,"y": 0},
+             
+            { "matrix": [1, 0],"x": 0,"y": 1}, 
+            { "matrix": [1, 1],"x": 1,"y": 1}, 
+            { "matrix": [1, 2],"x": 2,"y": 1}, 
+            
+            { "matrix": [2, 0],"x": 0,"y": 2}, 
+            { "matrix": [2, 1],"x": 1,"y": 2}, 
+            { "matrix": [2, 2],"x": 2,"y": 2}
+			]
+        }
+    }
+}
